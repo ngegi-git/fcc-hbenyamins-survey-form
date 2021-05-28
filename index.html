@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H. Benyamin Sueb Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">H. Benyamin Sueb Survey Form</h1>
+    <p id="description">Please fill the form, thank you.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name 
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+
+        <label for="email" id="email-label">
+            Email 
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="number" id="number-label">
+            Age 
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="45" required>
+        </label>
+
+        <label for="dropdown" id="number-label">
+            Where H. Benyamin Sueb was born?
+            <select id="dropdown">
+                <option>Jakarta</option>
+                <option>Bekasi</option>
+                <option>Batavia</option>
+            </select>
+        </label>
+
+        <label for="radio" id="radio-label">
+        What is the profession H. Benyamin Sueb?
+        </label>
+        <input type="radio" name="radio" value="1" checked> Employees <br />
+        <input type="radio" name="radio" value="2"> Artist <br />
+        <input type="radio" name="radio" value="3"> athlete <br /><br />
+
+        <label for="checkbox" id="checkbox-label">
+            Choose your favorite songs?
+        </label>
+        <input type="checkbox" value="1" checked> Aturan Asyik <br />
+        <input type="checkbox" value="2"> Sang Kodok <br />
+        <input type="checkbox" value="3"> Disini Aje <br />
+        <input type="checkbox" value="4"> Item Manis <br />
+        <input type="checkbox" value="5"> Tukang Tuak <br /><br />
+
+        <label for="comments" id="comments-label">
+            Any comments or suggestions? 
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" value="submit">Submit</button>
+
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
